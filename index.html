@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Website Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <nav>
+        <img src="data:image/png;base64,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"  class="logo">
+   
+        <div>
+            <button class="language-btn">English <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAAB0dHT8/Pz6+vrn5+fHx8fz8/Pj4+Ps7Oybm5t2dnZ6enpKSkq6urozMzOhoaGGhobZ2dlQUFAaGhrAwMASEhJiYmJdXV0hISGMjIzQ0NCoqKguLi4KCgqSkpI7OzsvLy9ra2smJiZDQ0OxsbFVVVU6OjqmltffAAADBUlEQVR4nO3bi1LiQBCF4RESghBAQG4i4Kq47/+GS2257gSJhDDdPdH/ewJPlcWp7uk4BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAw1u3lLVt5ryuY77Z/E4P+rVTAdGGd7d0ilQnYblkn+9BqiyTsWOfydEQS5taxPLlIwql1LM9UJOHAOpZnIJJwaR3LsxRJ2LOO5emJJExX1rk+rIQKcTi3TvZuPpQJGM//6Z1UQOfG1tn+epAL6LJn63QHrUwwocverPPdLEUDHgbEV+OAr0I/o/+tf5kGHK2lAx5GjK1hwLlCQOfuDBM+agS0jKgU0LWtJsWxzGh/glEtyhZh0a3FNPwmtmI7ZfKiHnAjuSc9Yb1RDjia6AY8jFLKCWfaAZ171My33esHdMlOMWFPrSd8ijtwmfXoeZnW9u1ZsQiLur9VAsoPTF9E1OiMkWFA52b34gFfZF5hKpOvRYMiLJLuDMHNYUWJ7IZxZ1KERxElazGPIKBzqdz6bao6MJVLpV4WYwl4GKVk1m/36gNTuZnEw9vGuAiL9gIJxZ7Q6nkIHnBnHelI8FqMoQiLsrDrt4XZwFQuCdkZy8Q6zimTUbCAT8qbw6qC1WJMRVi0D1OLL+YDU7kwr1JaL0y1hKjF2IqwKMCrVD/CnvAl115KC53/BpQ+XRVwEM3AVG59zRL1Ndqe8F1xDz5vRMArOsPkhamWug9vjQlY91hjbP13XyCr8/nQOMp5okx6+Q3jogE94UsvPdZ4aljAQy1eNi02owiLZhclVLk5DO2x+mn/fWSbw4ra1UcpmQ9EFFStRcnje1lZtVFK8+YwtG6VDeOycT3hS88fazSvCIvOHmtsGtkTvjO1uG18wHPHGvanFtdrfxXxOwR0LikfpfSO72WV3r3H+IRWT/d0xKZNhF+ZnAo4N705DK3zeSDW+ApN0+djjYif0Oo5WqLOm7M5rGzob/sHUV0DhdId/xv6V7tv9SPjSYa7vJ/3Zt+k5wEAAAAAAAAAAAAAAAAAAAAAAAAAAADg5/oDAc8vOXSLz7sAAAAASUVORK5CYII="  ></button>
+            <button>Sign In</button>
+        </div>
+    </nav>    
+    <div class="header-content">
+        <h1>Laughter. Tears. Thrills. Find it all on Netflix.
+            </h1>
+        <h3>Endless entertainment starts at just ₹ 149. Cancel anytime.
+        </h3>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <form  class="email-signup">m
+            <input type="text" placeholder="Email address" required>
+            <button type="submit">Get Started</button>
+        </form>
+    </div>  
+</div>
+<div class="features">
+    <div class="row">       
+        <div class="text-col">
+            <h2>Enjoy on your TV.</h2>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="img-col">
+            <img src="https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod%2Fimages%2Fbest-movies-on-netflix-the-mother-6478b59716093.jpg%3Fcrop%3D1xw%3A1xh%3Bcenter%2Ctop%26resize%3D980%3A*&tbnid=ZbDlXPg5CU1wmM&vet=12ahUKEwiite3F5NeCAxX0RGwGHauoDo4QMygBegQIARBt..i&imgrefurl=https%3A%2F%2Fwww.seventeen.com%2Fcelebrity%2Fmovies-tv%2Fg43646093%2Fbest-netflix-movies-right-now%2F&docid=Gkn8JFFM9UJDYM&w=980&h=1452&q=netflix%20movies&ved=2ahUKEwiite3F5NeCAxX0RGwGHauoDo4QMygBegQIARBt" alt="">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="img-col">
+            <img src="https://images.ctfassets.net/4cd45et68cgf/4b6XBxkuSQCFfdAW4RjLUW/82429146f6e13bb0e623f6a63feefe1e/_______________-netflix.jpg" alt="">
+        </div>
+        <div class="text-col">
+            <h2>Download your shows to watch offline</h2>
+            <p>Save your favourites easily and always have something to watch.</p>
+        </div>      
+    </div>  
+    </div>
+    
+    <div class="row">       
+        <div class="text-col">
+            <h2>Watch everywhere</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="img-col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTIiXfjANDiygn-e_tJxksPhWPXEefM3FyIQ&usqp=CAU" alt="">
+        </div>
+    </div>   
+    <div class="row">
+        <div class="img-col">
+            <img src="https://images.ctfassets.net/4cd45et68cgf/6ixuXutDJOBHlzYMnWkaZb/6139b6639effce974312dc17ec4605bb/Top_10_in_Kids_Row.png" alt="">
+        </div>
+        <div class="text-col">
+            <h2>Create profiles for kids</h2>
+            <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+        </div>
+    </div>  
+</div>
+
+
+<div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first">
+            <label for="first">What is Netflix?</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ab voluptas praesentium a. Asperiores repellendus modi sit accusamus, corporis placeat expedita. Aut pariatur dignissimos beatae eligendi mollitia, ea eveniet exercitationem.</p>                                
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id=" second">
+            <label for="second">How much does Netflix cost?</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ab voluptas praesentium a. Asperiores repellendus modi sit accusamus, corporis placeat expedita. Aut pariatur dignissimos beatae eligendi mollitia, ea eveniet exercitationem.</p> 
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id=" third">
+            <label for="third">Where can I watch?</label>
+            <div class="content">               
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ab voluptas praesentium a. Asperiores repellendus modi sit accusamus, corporis placeat expedita. Aut pariatur dignissimos beatae eligendi mollitia, ea eveniet exercitationem.</p>
+                
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id=" fourth">
+            <label for="fourth">How does I cancel</label>
+            <div class="content">               
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ab voluptas praesentium a. Asperiores repellendus modi sit accusamus, corporis placeat expedita. Aut pariatur dignissimos beatae eligendi mollitia, ea eveniet exercitationem.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id=" fifth">
+            <label for="fifth">What can I watch on Netflix?</label>
+            <div class="content">              
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ab voluptas praesentium a. Asperiores repellendus modi sit accusamus, corporis placeat expedita. Aut pariatur dignissimos beatae eligendi mollitia, ea eveniet exercitationem.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id=" sixth">
+            <label for="sixth">Is Netflix good for kids?</label>
+            <div class="content">               
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ab voluptas praesentium a. Asperiores repellendus modi sit accusamus, corporis placeat expedita. Aut pariatur dignissimos beatae eligendi mollitia, ea eveniet exercitationem.</p>
+            </div>
+        </li>
+    </ul>
+    <small>Ready to watch? Enter your email to create or restart your membership.</small>
+    <form  class="email-signup">
+
+        <input type="text" placeholder="Email address" required>
+        <button type="submit">Get Started</button>
+    </form>
+</div>
+
+<div class="footer">
+    <h2>Question ? call 000-0000-000-000</h2>
+    <div class="row">
+        <div class="col">
+            <a href="#">FAQ</a>
+            <a href="#">Invester Relation</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+        <div class="col">
+            <a href="#">Help Center</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookies Prefereces</a>
+            <a href="#">SLegal Notices</a>
+        </div>
+        <div class="col">
+            <a href="#">Account</a>
+            <a href="#">Ways to watch</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <div class="col">
+            <a href="#">Media Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+            
+        </div>
+    </div>
+    <button class="language-btn">English <img src="images/down-icon.png"  ></button>
+    <p class="copyright-text">Netflix India</p>
+
+</div>
+
+
+
+</body>
+</html>
